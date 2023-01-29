@@ -7,11 +7,6 @@
     height: 90vh;
 }
 
-.manual-button:hover {
-    box-shadow: inset 1522px 0 0 0 #07f026;
-    transition: ease-in 1s;
-}
-
 .manual-button {
     position: relative;
     margin: 0px 190px;
@@ -20,7 +15,15 @@
     border-radius: 0px 0px 5px 5px;
     outline: none;
     cursor: pointer;
-    border-style: solid none none none;
-    background-color: aliceblue;
+    background-color: transparent;
+    box-shadow: 5px 5px 1px 5px rgba(238, 217, 113, 1);
+    border: 1px #000 solid;
 }
+
+.manual-button:hover {
+    background-color:  #FFA351FF;
+    transition: ease-in 1s;
+}
+
+
 

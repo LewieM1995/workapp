@@ -53,6 +53,9 @@
     padding-left: 10px;
     padding-top: 10px;
     font-size: 15px;
+    background-color: transparent;
+    box-shadow: 5px 5px 1px 5px rgba(238, 217, 113, 1);
+    border: 1px #000 solid;
 }
 
 .manual-input::placeholder {
@@ -114,6 +117,9 @@
     padding-left: 10px;
     padding-top: 10px;
     font-size: 15px;
+    background-color: transparent;
+    box-shadow: 5px 5px 1px 5px rgba(238, 217, 113, 1);
+    border: 1px #000 solid;
 }
 
 .recipe-input::placeholder {

@@ -7,15 +7,15 @@ function BatchPage () {
 const [batchNo, setBatchNo] = useState('');
 const [productName, setProductName] = useState('');
 const [productCode, setProductCode] = useState('');
-const ls = 'http://localhost:8000/batchCodes';
+const db = 'http://localhost:8000/batchCodes';
 
 const onSubmit = (e) => {
- e.preventDefault();
+ //e.preventDefault();
 
  const batch = {batchNo, productName, productCode};
  console.log(batch);
 
- fetch(ls, {
+ fetch(db, {
   method: 'POST',
   body: JSON.stringify({
     batchNum : batchNo,

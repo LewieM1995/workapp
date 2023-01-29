@@ -5,22 +5,66 @@ import './mblendpage.css'
 
 function BlendPage() {
 
+const dbtwo = 'http://localhost:4000/manualBlends';
   
 const [batchNo, setBatchNo] = useState('');
-const [productName, setProductName] = useState('');
 const [productCode, setProductCode] = useState('');
+const [recipe, setRecipe] = useState('');
+const [target, setTarget] = useState('');
+const [actual, setActual] = useState('');
+const [initials, setInitials] = useState('');
+const [formula, setFormula] = useState('');
+const [jobNum, setJobNum] = useState('');
+const [designCode, setDesginCode] = useState('');
 
 const onSubmit = (e) => {
- e.preventDefault();
-
- const batch = {batchNo, productName, productCode};
- console.log(batch);
-}
+e.preventDefault();
+ 
+  const batch = {batchNo, productCode, recipe, target, actual, initials, formula, jobNum, designCode};
+  console.log(batch);
+ 
+  fetch(dbtwo, {
+   method: 'POST',
+   body: JSON.stringify({
+      batchNum : batchNo,
+      productcode: productCode,
+      recipePer: recipe,
+      targetW: target,
+      actualW: actual,
+      Tinitials: initials,
+      formulaCode: formula,
+      jobnum: jobNum,
+      designcode: designCode
+   }),
+   headers: {
+     'Content-type': 'application/json; charset=UTF-8'
+   }
+ })
+ }
 
   return (
     <div className='manual-blend-container'>
-      <form className='form-large'>
-      <ManualBlend onSubmit={onSubmit} setBatchNo={setBatchNo} setProductName={setProductName} setProductCode={setProductCode} productCode={productCode} batchNo={batchNo} productName={productName}/>
+      <form className='form-large' onSubmit={onSubmit}>
+      <ManualBlend onSubmit={onSubmit} 
+      setBatchNo={setBatchNo} 
+      setProductCode={setProductCode} 
+      productCode={productCode} 
+      batchNo={batchNo} 
+      recipe={recipe}
+      setRecipe={setRecipe}
+      target={target}
+      setTarget={setTarget}
+      actual={actual}
+      setActual={setActual}
+      initials={initials}
+      setInitials={setInitials}
+      formula={formula}
+      setFormula={setFormula}
+      jobNum={jobNum}
+      setJobNum={setJobNum}
+      designCode={designCode}
+      setDesginCode={setDesginCode}
+      />
       <button className='manual-button' type='submit'>Submit</button>
       </form>
     </div>

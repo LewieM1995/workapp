@@ -56,7 +56,8 @@
 .batch-input:focus {
     box-shadow: none;
     outline: none;
-    border-color: rgba(250, 163, 91, 0.979);
+    transition: all 0.1s;
+    border: 2px solid rgba(250, 163, 91, 0.979);
 }
 
 .batch-input:focus + .batch-label, .batch-input:not(:placeholder-shown) + .batch-label {
