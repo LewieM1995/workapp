@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+}
+
+.inner-manual-container {
+    width: 80%;
+    height: 80%;
+    margin: auto auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.manual-form {
+    width: 400px;
+    height: 400px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+.manual-input-div{
+    width: 80%;
+    height: 50px;
+    margin-bottom: 0.5em;
+    transition: all 0.3s;
+    margin: 2em auto;
+}
+
+.manual-label {
+    width: 130px;
+    font-size: 1em;
+    color: rgba(24, 23, 23, 0.6);
+    display: block;
+    opacity: 1;
+    transform: translateY(-2em);
+    transform-origin: 0 0;
+    transition: all 0.3s;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.manual-input {
+    box-shadow: none;
+    background-color: rgba(0,0,0, 0.01);
+    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    /*border-style: none none solid none;*/
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.manual-input::placeholder {
+    color: transparent;
+}
+
+.manual-input:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: rgba(28, 218, 59, 0.929);
+}
+
+.manual-input:focus + .manual-label, .manual-input:not(:placeholder-shown) + .manual-label {
+    transform: translateY(-3.5em) scale(.8);
+}
+
+
+
+
+
+/* CSS for Manual Blend Two */
+
+.mbtwo-container {
+    width: 1000px;
+    height: 400px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+.recipe-input-div{
+    width: 200px;
+    height: 30px;
+    transition: all 0.3s;
+    margin: 2em;
+}
+
+.recipe-label {
+    width: 130px;
+    font-size: 1em;
+    color: rgba(24, 23, 23, 0.6);
+    display: block;
+    opacity: 1;
+    transform: translateY(-2em);
+    transform-origin: 0 0;
+    transition: all 0.3s;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.recipe-input {
+    box-shadow: none;
+    background-color: rgba(0,0,0, 0.01);
+    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    /*border-style: none none solid none;*/
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.recipe-input::placeholder {
+    color: transparent;
+}
+
+.recipe-input:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: rgba(28, 218, 59, 0.929);
+}
+
+.recipe-input:focus + .recipe-label, .recipe-input:not(:placeholder-shown) + .recipe-label {
+    transform: translateY(-3.5em) scale(.8);
+}
+

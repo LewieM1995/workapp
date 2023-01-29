@@ -1,0 +1,22 @@
+{
+  "batchCodes": [
+    {
+      "id": 1,
+      "batchNum": "2YATQ01FA",
+      "productName": "FXDEV116",
+      "productCode": "FXDEV116"
+    },
+    {
+      "batchNum": "2YATQF019S",
+      "productname": "FXDEV114",
+      "productcode": "FXDEV114",
+      "id": 2
+    },
+    {
+      "batchNum": "2YATQF019S",
+      "productname": "FXDEV114",
+      "productcode": "FXDEV114",
+      "id": 3
+    }
+  ]
+}
