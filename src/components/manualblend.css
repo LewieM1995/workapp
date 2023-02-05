@@ -54,8 +54,12 @@
     padding-top: 10px;
     font-size: 15px;
     background-color: transparent;
-    box-shadow: 5px 5px 1px 5px rgba(238, 217, 113, 1);
+    box-shadow: 5px 5px 1px 1px rgba(238, 217, 113, 1);
     border: 1px #000 solid;
+}
+
+.manual-input-div:nth-child(4) {
+    width: 100px;
 }
 
 .manual-input::placeholder {
@@ -65,7 +69,7 @@
 .manual-input:focus {
     box-shadow: none;
     outline: none;
-    border-color: rgba(28, 218, 59, 0.929);
+    border-color: #FFA351FF;
 }
 
 .manual-input:focus + .manual-label, .manual-input:not(:placeholder-shown) + .manual-label {
@@ -118,7 +122,7 @@
     padding-top: 10px;
     font-size: 15px;
     background-color: transparent;
-    box-shadow: 5px 5px 1px 5px rgba(238, 217, 113, 1);
+    box-shadow: 5px 5px 1px 1px rgba(238, 217, 113, 1);
     border: 1px #000 solid;
 }
 
@@ -129,7 +133,7 @@
 .recipe-input:focus {
     box-shadow: none;
     outline: none;
-    border-color: rgba(28, 218, 59, 0.929);
+    border-color: #FFA351FF;
 }
 
 .recipe-input:focus + .recipe-label, .recipe-input:not(:placeholder-shown) + .recipe-label {

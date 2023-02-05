@@ -22,9 +22,9 @@ function ManualBlend({ batchNo, productCode, setBatchNo, setProductCode, recipe,
           <input type='text' className='manual-input' placeholder='Design Code' value={designCode} onChange={(e) => setDesginCode(e.target.value)}/>
           <label className='manual-label'  required>Design Code</label>
         </div>
-        <div className='recipe-input-div'>
-            <input type='text' className='recipe-input' placeholder='Tech Initals' value={initials} onChange={(e) => setInitials(e.target.value)} />
-            <label className='recipe-label'required>Tech Initals</label>
+        <div className='manual-input-div'>
+          <input type='text' className='manual-input' placeholder='Tech Initals' value={initials} onChange={(e) => setInitials(e.target.value)} />
+          <label className='manual-label'required>Tech Initals</label>
         </div>
       </div>
       <ManualBTwo setBatchNo={setBatchNo} setProductCode={setProductCode} productCode={productCode} batchNo={batchNo} recipe={recipe}

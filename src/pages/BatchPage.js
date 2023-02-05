@@ -11,20 +11,17 @@ const db = 'http://localhost:8000/batchCodes';
 
 const onSubmit = (e) => {
  //e.preventDefault();
-
  const batch = {batchNo, productName, productCode};
  console.log(batch);
 
  fetch(db, {
   method: 'POST',
   body: JSON.stringify({
-    batchNum : batchNo,
-    productname : productName,
-    productcode: productCode
-  }),
-  headers: {
-    'Content-type': 'application/json; charset=UTF-8'
-  }
+    batchNum : batchNo.toUpperCase(),
+    productname : productName.toUpperCase(),
+    productcode: productCode.toUpperCase(),
+    date: new Date()
+  })
 })
 }
 

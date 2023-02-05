@@ -18,7 +18,7 @@ const [jobNum, setJobNum] = useState('');
 const [designCode, setDesginCode] = useState('');
 
 const onSubmit = (e) => {
-e.preventDefault();
+//e.preventDefault();
  
   const batch = {batchNo, productCode, recipe, target, actual, initials, formula, jobNum, designCode};
   console.log(batch);
@@ -26,19 +26,17 @@ e.preventDefault();
   fetch(dbtwo, {
    method: 'POST',
    body: JSON.stringify({
-      batchNum : batchNo,
-      productcode: productCode,
-      recipePer: recipe,
-      targetW: target,
-      actualW: actual,
-      Tinitials: initials,
-      formulaCode: formula,
-      jobnum: jobNum,
-      designcode: designCode
-   }),
-   headers: {
-     'Content-type': 'application/json; charset=UTF-8'
-   }
+      batchNum : batchNo.toUpperCase(),
+      productcode: productCode.toUpperCase(),
+      recipePer: recipe + '%',
+      targetW: target + 'KG',
+      actualW: actual + 'KG',
+      Tinitials: initials.toUpperCase(),
+      formulaCode: formula.toUpperCase(),
+      jobnum: jobNum.toUpperCase(),
+      designcode: designCode.toUpperCase(),
+      date: new Date()
+   })
  })
  }
 
