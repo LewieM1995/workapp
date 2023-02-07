@@ -2,7 +2,7 @@ import React from 'react'
 
 function SearchB() {
   return (
-    <div>SearchManual</div>
+    <div>SearchB</div>
   )
 }
 

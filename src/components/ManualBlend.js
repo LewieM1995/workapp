@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './manualblend.css'
 import ManualBTwo from './ManualBTwo'
 
 
 function ManualBlend({ batchNo, productCode, setBatchNo, setProductCode, recipe, setActual, setRecipe, actual, setDesginCode, designCode, target, setTarget, initials, setInitials, formula, setFormula, jobNum, setJobNum}){
 
+/*const [addition, setAddition] = useState([{id: 1}])
 
+const addComp = () => {
+  setAddition([...addition, {id : addition.length + 1}]);
+}; */
 
   return (
     <div className='inner-manual-container'>
@@ -27,7 +31,7 @@ function ManualBlend({ batchNo, productCode, setBatchNo, setProductCode, recipe,
           <label className='manual-label'required>Tech Initals</label>
         </div>
       </div>
-      <ManualBTwo setBatchNo={setBatchNo} setProductCode={setProductCode} productCode={productCode} batchNo={batchNo} recipe={recipe}
+        <ManualBTwo setBatchNo={setBatchNo} setProductCode={setProductCode} productCode={productCode} batchNo={batchNo} recipe={recipe}
       setRecipe={setRecipe}
       target={target}
       setTarget={setTarget}
