@@ -13,7 +13,7 @@ function SearchM() {
   setCodes(info)
   console.log(search.toLowerCase() === ''
   ? info
-  : info.filter(item => item.batchNum.toLowerCase().includes(search) || item.designcode.includes(search)))
+  : info.filter(item => item.batchNum.toLowerCase().includes(search) || item.date.toString().includes(search)))
  }
 
  const filteredInfo = codes
@@ -51,7 +51,7 @@ function SearchM() {
           {filteredInfo.filter((item) => 
           search.toLowerCase() === ""
           ? item
-          : item.batchNum.toLowerCase().includes(search) || item.designcode.includes(search)
+          : item.batchNum.toLowerCase().includes(search) || item.date.toString().includes(search)
           ).map((item) => (
             <tr key={item.id}>
                 <td>{item.batchNum}</td>
