@@ -1,9 +1,9 @@
 import React from 'react'
 
-function SearchManual() {
+function SearchB() {
   return (
     <div>SearchManual</div>
   )
 }
 
-export default SearchManual
+export default SearchB

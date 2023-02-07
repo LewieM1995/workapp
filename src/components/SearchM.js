@@ -1,76 +1,27 @@
 import React, { useState } from 'react'
 
-function SearchBatch() {
+function SearchM() {
 
   const [search, setSearch] = useState('');
-  const [codes, setCodes] = useState('');
+  const [codes, setCodes] = useState([]);
 
   let dbtwo = 'http://localhost:4000/manualBlends';
 
  async function getData(){
   const res = await fetch(dbtwo);
-  const info = await res.text();
-  setCodes(info);
-  console.log(info)
+  const info = await res.json();
+  setCodes(info)
+  console.log(search.toLowerCase() === ''
+  ? info
+  : info.filter(item => item.batchNum.toLowerCase().includes(search) || item.designcode.includes(search)))
  }
+
+ const filteredInfo = codes
 
  const batchSubmit = (e) => {
   e.preventDefault();
   getData()
  }
-const manualBlends = [
-  {
-    "batchNum": "2YAT",
-    "productcode": "gfdgdfg",
-    "recipePer": "gfdg",
-    "targetW": "gdfg",
-    "actualW": "gfdg",
-    "Tinitials": "gfdgdf",
-    "formulaCode": "gfdg",
-    "jobnum": "gdfg",
-    "designcode": "gfdg",
-    "id": 1
-  },
-  {
-    "batchNum": "2YAT334455",
-    "productcode": "FXDEV116",
-    "recipePer": "50",
-    "targetW": "10",
-    "actualW": "10",
-    "Tinitials": "LM",
-    "formulaCode": "FXDEV116",
-    "jobnum": "PPO2-00223344",
-    "designcode": "0352-0352",
-    "date": "2023-02-04T22:21:55.813Z",
-    "id": 2
-  },
-  {
-    "batchNum": "FDGDFGDFG",
-    "productcode": "GFDG",
-    "recipePer": "33%",
-    "targetW": "gfdg",
-    "actualW": "gdfg",
-    "Tinitials": "gdfg",
-    "formulaCode": "dfgdfg",
-    "jobnum": "fdg",
-    "designcode": "gdfg",
-    "date": "2023-02-04T22:53:31.595Z",
-    "id": 3
-  },
-  {
-    "batchNum": "TERT",
-    "productcode": "TERTER",
-    "recipePer": "21%",
-    "targetW": "12KG",
-    "actualW": "12KG",
-    "Tinitials": "REW",
-    "formulaCode": "TRETERT",
-    "jobnum": "ETERTERT",
-    "designcode": "TRETERT",
-    "date": "2023-02-04T22:54:52.093Z",
-    "id": 4
-  }
- ]
 
   return (
     <>
@@ -97,9 +48,11 @@ const manualBlends = [
             </tr>
           </thead>
           <tbody>
-          {manualBlends.filter((item) => {
-            return search.toLowerCase() === '' ? item : item.batchNum.toLowerCase().includes(search);
-          }).map((item) => (
+          {filteredInfo.filter((item) => 
+          search.toLowerCase() === ""
+          ? item
+          : item.batchNum.toLowerCase().includes(search) || item.designcode.includes(search)
+          ).map((item) => (
             <tr key={item.id}>
                 <td>{item.batchNum}</td>
                 <td>{item.productcode}</td>
@@ -113,11 +66,10 @@ const manualBlends = [
                 <td>{item.date}</td>
               </tr>
           ))}
-              
           </tbody>
       </table>
     </>
   )
 }
 
-export default SearchBatch
+export default SearchM

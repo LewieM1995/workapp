@@ -1,11 +1,11 @@
 import React from 'react'
-import SearchBatch from './SearchBatch'
+import SearchM from './SearchM'
 import './search.css'
 
 function Search() {
   return (
     <div className='search-container'>
-    <SearchBatch />
+    <SearchM />
     </div>
   )
 }
