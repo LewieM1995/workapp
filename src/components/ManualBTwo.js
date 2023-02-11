@@ -1,7 +1,8 @@
 import React from 'react'
 
 function ManualBTwo({ batchNo, productCode, setBatchNo, setProductCode, recipe, target, actual, setRecipe, setTarget, setActual}) {
-  return (
+  
+    return (
     <div className='mbtwo-container'>
         <div className='recipe-input-div'>
             <input type='text' className='recipe-input' placeholder='Product Code' value={productCode} onChange={(e) => setProductCode(e.target.value)}/>
@@ -23,7 +24,6 @@ function ManualBTwo({ batchNo, productCode, setBatchNo, setProductCode, recipe, 
             <input type='text' className='recipe-input' placeholder='Actual (KG)' value={actual} onChange={(e) => setActual(e.target.value)}/>
             <label className='recipe-label'  required>Actual (KG)</label>
         </div>
-
     </div>
   )
 }

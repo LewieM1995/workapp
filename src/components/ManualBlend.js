@@ -5,11 +5,19 @@ import ManualBTwo from './ManualBTwo'
 
 function ManualBlend({ batchNo, productCode, setBatchNo, setProductCode, recipe, setActual, setRecipe, actual, setDesginCode, designCode, target, setTarget, initials, setInitials, formula, setFormula, jobNum, setJobNum}){
 
-/*const [addition, setAddition] = useState([{id: 1}])
+const [comp, setComp] = useState([{id: 1, produceCode: '', recipe: '', target: '', initials: '', actual: '', batchNo: '', formula: '', jobNum: '', designCode: ''}]);
 
-const addComp = () => {
-  setAddition([...addition, {id : addition.length + 1}]);
-}; */
+const addComp = (e) => {
+  //e.prenventDefault();
+  setComp([...comp, {id : comp.length++, produceCode: '', recipe: '', target: '', initials: '', actual: '', batchNo: '', formula: '', jobNum: '', designCode: ''}]);
+}; 
+
+const handleChange = (e, id) => {
+  const newComp = [...comp];
+  const index = newComp.findIndex(index => comp.id === id);
+  newComp[index][e.target.name] = e.target.value;
+  setComp(newComp);
+}
 
   return (
     <div className='inner-manual-container'>
@@ -31,21 +39,35 @@ const addComp = () => {
           <label className='manual-label'required>Tech Initals</label>
         </div>
       </div>
-        <ManualBTwo setBatchNo={setBatchNo} setProductCode={setProductCode} productCode={productCode} batchNo={batchNo} recipe={recipe}
-      setRecipe={setRecipe}
-      target={target}
-      setTarget={setTarget}
-      actual={actual}
-      setActual={setActual}
-      initials={initials}
-      setInitials={setInitials}
-      formula={formula}
-      setFormula={setFormula}
-      jobNum={jobNum}
-      setJobNum={setJobNum}
-      designCode={designCode}
-      setDesginCode={setDesginCode}/>
+      <div className='wrapper-mbt'>
+          {comp.map((item) => (
+            <ManualBTwo
+              key={comp.id}
+              id={comp.id}
+              setBatchNo={(e) => handleChange(e, comp.id)}
+              batchNo={comp.batchNo}
+              setProductCode={(e) => handleChange(e, comp.id)}
+              productCode={comp.produceCode}
+              setRecipe={(e) => handleChange(e, comp.id)}
+              recipe={comp.recipe}
+              setTarget={(e) => handleChange(e, comp.id)}
+              target={comp.target}
+              setActual={(e) => handleChange(e, comp.id)}
+              actual={comp.actual}
+              setInitials={(e) => handleChange(e, comp.id)}
+              initials={comp.initials}
+              setFormula={(e) => handleChange(e, comp.id)}
+              formula={comp.formula}
+              setJobNum={(e) => handleChange(e, comp.id)}
+              jobNum={comp.jobNum}
+              setDesginCode={(e) => handleChange(e, comp.id)}
+              designCode={comp.designCode}
+            />
+          ))}
+        <button className='btn btn-primary' onClick={addComp} type='button'></button>
+      </div>
     </div>
+
   )
 }
 

@@ -7,7 +7,7 @@
     height: 80%;
     margin: auto auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: aliceblue;
     border-radius: 5px 5px 0px 0px;
@@ -73,7 +73,7 @@
 }
 
 .manual-input:focus + .manual-label, .manual-input:not(:placeholder-shown) + .manual-label {
-    transform: translateY(-3.5em) scale(.8);
+    transform: translateY(-3.1em) scale(.8);
 }
 
 
@@ -82,8 +82,10 @@
 
 /* CSS for Manual Blend Two */
 
+
+
 .mbtwo-container {
-    width: 20%;
+    width: 100%;
     height: 400px;
     background-color: aliceblue;
     border-radius: 5px;
@@ -137,6 +139,11 @@
 }
 
 .recipe-input:focus + .recipe-label, .recipe-input:not(:placeholder-shown) + .recipe-label {
-    transform: translateY(-3.5em) scale(.8);
+    transform: translateY(-3.1em) scale(.8);
+}
+
+.wrapper-mbt {
+    height: 400px;
+    display: flex;
 }
 

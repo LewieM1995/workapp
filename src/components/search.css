@@ -7,9 +7,10 @@
 
 .search-form {
     width: 300px;
-    height: 100px;
-    border: 1px red solid;
+    height: 130px;
+    border: 1px rgb(192, 192, 124) solid;
     padding: 10px;
+    box-shadow: 2px 2px 1px 1px rgba(238, 217, 113, 1);
 }
 
 .search-div{
@@ -79,9 +80,16 @@
     transition: ease-in 0.4s;
 }
 
+
 .output-table{
-    width: 70%;
+    width: 75%;
     height: 80%;
-    border: 1px red solid;
+    border: 1px solid rgb(218, 198, 98);
     padding: 10px;
+    table-layout: auto;
+    box-shadow: 5px 5px 1px 1px rgba(238, 217, 113, 1);
 }
+
+
+
+ 

@@ -51,6 +51,93 @@
       "designcode": "TRETERT",
       "date": "2023-02-04T22:54:52.093Z",
       "id": 4
+    },
+    {
+      "batchNum": "TERT",
+      "productcode": "TERTER",
+      "recipePer": "21%",
+      "targetW": "12KG",
+      "actualW": "12KG",
+      "Tinitials": "REW",
+      "formulaCode": "TRETERT",
+      "jobnum": "ETERTERT",
+      "designcode": "TRETERT",
+      "date": "2023-02-04T22:54:52.093Z",
+      "id": 5
+    },
+    {
+      "batchNum": "TERT",
+      "productcode": "TERTER",
+      "recipePer": "21%",
+      "targetW": "12KG",
+      "actualW": "12KG",
+      "Tinitials": "REW",
+      "formulaCode": "TRETERT",
+      "jobnum": "ETERTERT",
+      "designcode": "TRETERT",
+      "date": "2023-02-04T22:54:52.093Z",
+      "id": 6
+    },
+    {
+      "batchNum": "TERT",
+      "productcode": "TERTER",
+      "recipePer": "21%",
+      "targetW": "12KG",
+      "actualW": "12KG",
+      "Tinitials": "REW",
+      "formulaCode": "TRETERT",
+      "jobnum": "ETERTERT",
+      "designcode": "TRETERT",
+      "date": "2023-02-04T22:54:52.093Z",
+      "id": 7
+    },
+    {
+      "batchNum": "TERT",
+      "productcode": "TERTER",
+      "recipePer": "21%",
+      "targetW": "12KG",
+      "actualW": "12KG",
+      "Tinitials": "REW",
+      "formulaCode": "TRETERT",
+      "jobnum": "ETERTERT",
+      "designcode": "TRETERT",
+      "date": "2023-02-04T22:54:52.093Z",
+      "id": 8
+    },
+    {
+      "batchNum": "TERT",
+      "productcode": "TERTER",
+      "recipePer": "21%",
+      "targetW": "12KG",
+      "actualW": "12KG",
+      "Tinitials": "REW",
+      "formulaCode": "TRETERT",
+      "jobnum": "ETERTERT",
+      "designcode": "TRETERT",
+      "date": "2023-02-04T22:54:52.093Z",
+      "id": 9
+    },
+    {
+      "batchNum": "TERT",
+      "productcode": "TERTER",
+      "recipePer": "21%",
+      "targetW": "12KG",
+      "actualW": "12KG",
+      "Tinitials": "REW",
+      "formulaCode": "TRETERT",
+      "jobnum": "ETERTERT",
+      "designcode": "TRETERT",
+      "date": "2023-02-04T22:54:52.093Z",
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
     }
   ]
 }

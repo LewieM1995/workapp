@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function SearchM() {
 
   const [search, setSearch] = useState('');
   const [codes, setCodes] = useState([]);
 
-  let dbtwo = 'http://localhost:4000/manualBlends';
+  const dbtwo = 'http://localhost:4000/manualBlends';
 
  async function getData(){
   const res = await fetch(dbtwo);
@@ -13,7 +13,7 @@ function SearchM() {
   setCodes(info)
   console.log(search.toLowerCase() === ''
   ? info
-  : info.filter(item => item.batchNum.toLowerCase().includes(search) || item.date.toString().includes(search)))
+  : info.filter(item => item.batchNum.toLowerCase().includes(search) || item.date.toString().includes(search) || item.jobnum.toString().toLowerCase().includes(search) || item.productcode.toString().toLowerCase().includes(search)))
  }
 
  const filteredInfo = codes
@@ -22,6 +22,7 @@ function SearchM() {
   e.preventDefault();
   getData()
  }
+
 
   return (
     <>
@@ -32,8 +33,9 @@ function SearchM() {
         </div>
           <button className='search-button' type='submit'>Find Items</button>
       </form>
-      <table className='output-table'>
-          <thead className='output-thead'>
+    <div className='output-table'>
+      <table className='table table-striped'>
+          <thead>
             <tr>
               <th>Batch Number</th>
               <th>Product Code</th>
@@ -50,7 +52,7 @@ function SearchM() {
           <tbody>
           {filteredInfo.filter((item) => 
           search.toLowerCase() === ""
-          ? item
+          ? !item
           : item.batchNum.toLowerCase().includes(search) || item.date.toString().includes(search)
           ).map((item) => (
             <tr key={item.id}>
@@ -64,10 +66,11 @@ function SearchM() {
                 <td>{item.jobnum}</td>
                 <td>{item.designcode}</td>
                 <td>{item.date}</td>
-              </tr>
+            </tr>
           ))}
           </tbody>
       </table>
+    </div>
     </>
   )
 }
