@@ -3,7 +3,7 @@ import './manualblend.css'
 import ManualBTwo from './ManualBTwo'
 
 
-function ManualBlend({ batchNo, productCode, setBatchNo, setProductCode, recipe, setActual, setRecipe, actual, setDesginCode, designCode, target, setTarget, initials, setInitials, formula, setFormula, jobNum, setJobNum, comp, setComp}){
+function ManualBlend({ setDesginCode, designCode, initials, setInitials, formula, setFormula, jobNum, setJobNum, comp, setComp}){
 
 
 
@@ -12,16 +12,6 @@ const addComp = (e) => {
   setComp([...comp, {id : comp.length + 1, productCode: '', recipe: '', target: '', actual: '', batchNo: ''}]);
 }; 
 
-const handleChange = (e, id) => {
-    if (!e.target) {
-      return;
-    }
-    
-    const newComp = [...comp];
-    const index = newComp.findIndex(index => index.id === id);
-    newComp[index][e.target.name] = e.target.value;
-    setComp(newComp);
-};
 
   return (
     <div className='inner-manual-container'>
@@ -50,16 +40,6 @@ const handleChange = (e, id) => {
               setComp={setComp}
               key={item.id}
               id={item.id}
-              setBatchNo={(e) => handleChange(e, item.id)}
-              batchNo={batchNo}
-              setProductCode={(e) => handleChange(e, item.id)}
-              productCode={productCode}
-              setRecipe={(e) => handleChange(e, item.id)}
-              recipe={recipe}
-              setTarget={(e) => handleChange(e, item.id)}
-              target={target}
-              setActual={(e) => handleChange(e, item.id)}
-              actual={actual}
             />
           ))}
         <button className='btn btn-warning' onClick={addComp} type='button'>+</button>

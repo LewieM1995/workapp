@@ -21,7 +21,10 @@ const onSubmit = (e) => {
     productname : productName.toUpperCase(),
     productcode: productCode.toUpperCase(),
     date: new Date()
-  })
+  }),
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  }
 })
 }
 

@@ -83,13 +83,14 @@
 
 .output-table{
     width: 75%;
-    height: 80%;
+    max-height: 80%;
     border: 1px solid rgb(218, 198, 98);
     padding: 10px;
     table-layout: auto;
+    display: inline-block;
+    overflow: auto;
     box-shadow: 5px 5px 1px 1px rgba(238, 217, 113, 1);
 }
-
 
 
  

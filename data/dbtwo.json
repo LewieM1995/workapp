@@ -1,121 +1,236 @@
 {
   "manualBlends": [
     {
-      "batchNum": "2YAT",
-      "productcode": "gfdgdfg",
-      "recipePer": "gfdg",
-      "targetW": "gdfg",
-      "actualW": "gfdg",
-      "Tinitials": "gfdgdf",
-      "formulaCode": "gfdg",
-      "jobnum": "gdfg",
-      "designcode": "gfdg",
-      "date": "2023-02-04T22:21:55.813Z",
+      "Tinitials": "LM",
+      "formulaCode": "FXDEV116",
+      "jobnum": "PPO2-012345",
+      "designcode": "0352-0352",
+      "date": "2023-02-12T12:25:32.449Z",
+      "comp": [
+        {
+          "id": 0,
+          "productCode": "FXDEV116",
+          "recipe": "50%",
+          "target": "10KG",
+          "actual": "10KG",
+          "batchNo": "2YATFFPO009"
+        },
+        {
+          "id": 2,
+          "productCode": "TSDA",
+          "recipe": "40%",
+          "target": "8KG",
+          "actual": "8KG",
+          "batchNo": "N/a"
+        },
+        {
+          "id": 3,
+          "productCode": "FXDEV116",
+          "recipe": "10%",
+          "target": "2KG",
+          "actual": "2KG",
+          "batchNo": "2YATFFP5505"
+        }
+      ],
       "id": 1
     },
     {
-      "batchNum": "2YAT334455",
-      "productcode": "FXDEV116",
-      "recipePer": "50",
-      "targetW": "10",
-      "actualW": "10",
       "Tinitials": "LM",
       "formulaCode": "FXDEV116",
-      "jobnum": "PPO2-00223344",
+      "jobnum": "PPO2-012345",
       "designcode": "0352-0352",
-      "date": "2023-02-04T22:21:55.813Z",
+      "date": "2023-02-12T12:25:32.449Z",
+      "comp": [
+        {
+          "id": 0,
+          "productCode": "FXDEV116",
+          "recipe": "50%",
+          "target": "10KG",
+          "actual": "10KG",
+          "batchNo": "2YATFFPO009"
+        },
+        {
+          "id": 2,
+          "productCode": "TSDA",
+          "recipe": "40%",
+          "target": "8KG",
+          "actual": "8KG",
+          "batchNo": "N/a"
+        },
+        {
+          "id": 3,
+          "productCode": "FXDEV116",
+          "recipe": "10%",
+          "target": "2KG",
+          "actual": "2KG",
+          "batchNo": "2YATFFP5505"
+        }
+      ],
       "id": 2
     },
     {
-      "batchNum": "FDGDFGDFG",
-      "productcode": "GFDG",
-      "recipePer": "33%",
-      "targetW": "gfdg",
-      "actualW": "gdfg",
-      "Tinitials": "gdfg",
-      "formulaCode": "dfgdfg",
-      "jobnum": "fdg",
-      "designcode": "gdfg",
-      "date": "2023-02-04T22:53:31.595Z",
+      "Tinitials": "LM",
+      "formulaCode": "FXDEV116",
+      "jobnum": "PPO2-012345",
+      "designcode": "0352-0352",
+      "date": "2023-02-12T12:25:32.449Z",
+      "comp": [
+        {
+          "id": 0,
+          "productCode": "FXDEV116",
+          "recipe": "50%",
+          "target": "10KG",
+          "actual": "10KG",
+          "batchNo": "2YATFFPO009"
+        },
+        {
+          "id": 2,
+          "productCode": "TSDA",
+          "recipe": "40%",
+          "target": "8KG",
+          "actual": "8KG",
+          "batchNo": "N/a"
+        },
+        {
+          "id": 3,
+          "productCode": "FXDEV116",
+          "recipe": "10%",
+          "target": "2KG",
+          "actual": "2KG",
+          "batchNo": "2YATFFP5505"
+        }
+      ],
       "id": 3
     },
     {
-      "batchNum": "TERT",
-      "productcode": "TERTER",
-      "recipePer": "21%",
-      "targetW": "12KG",
-      "actualW": "12KG",
-      "Tinitials": "REW",
-      "formulaCode": "TRETERT",
-      "jobnum": "ETERTERT",
-      "designcode": "TRETERT",
-      "date": "2023-02-04T22:54:52.093Z",
+      "Tinitials": "LM",
+      "formulaCode": "FXDEV116",
+      "jobnum": "PPO2-012345",
+      "designcode": "0352-0352",
+      "date": "2023-02-12T12:25:32.449Z",
+      "comp": [
+        {
+          "id": 0,
+          "productCode": "FXDEV116",
+          "recipe": "50%",
+          "target": "10KG",
+          "actual": "10KG",
+          "batchNo": "2YATFFPO009"
+        },
+        {
+          "id": 2,
+          "productCode": "TSDA",
+          "recipe": "40%",
+          "target": "8KG",
+          "actual": "8KG",
+          "batchNo": "N/a"
+        },
+        {
+          "id": 3,
+          "productCode": "FXDEV116",
+          "recipe": "10%",
+          "target": "2KG",
+          "actual": "2KG",
+          "batchNo": "2YATFFP5505"
+        }
+      ],
       "id": 4
     },
     {
-      "batchNum": "TERT",
-      "productcode": "TERTER",
-      "recipePer": "21%",
-      "targetW": "12KG",
-      "actualW": "12KG",
-      "Tinitials": "REW",
-      "formulaCode": "TRETERT",
-      "jobnum": "ETERTERT",
-      "designcode": "TRETERT",
-      "date": "2023-02-04T22:54:52.093Z",
+      "Tinitials": "LM",
+      "formulaCode": "FXDEV116",
+      "jobnum": "PPO2-012345",
+      "designcode": "0352-0352",
+      "date": "2023-02-12T12:25:32.449Z",
+      "comp": [
+        {
+          "id": 0,
+          "productCode": "FXDEV116",
+          "recipe": "50%",
+          "target": "10KG",
+          "actual": "10KG",
+          "batchNo": "2YATFFPO009"
+        },
+        {
+          "id": 2,
+          "productCode": "TSDA",
+          "recipe": "40%",
+          "target": "8KG",
+          "actual": "8KG",
+          "batchNo": "N/a"
+        },
+        {
+          "id": 3,
+          "productCode": "FXDEV116",
+          "recipe": "10%",
+          "target": "2KG",
+          "actual": "2KG",
+          "batchNo": "2YATFFP5505"
+        }
+      ],
       "id": 5
     },
     {
-      "batchNum": "TERT",
-      "productcode": "TERTER",
-      "recipePer": "21%",
-      "targetW": "12KG",
-      "actualW": "12KG",
-      "Tinitials": "REW",
-      "formulaCode": "TRETERT",
-      "jobnum": "ETERTERT",
-      "designcode": "TRETERT",
-      "date": "2023-02-04T22:54:52.093Z",
+      "Tinitials": "GFDG",
+      "formulaCode": "GDFG",
+      "jobnum": "GDFG",
+      "designcode": "GFDG",
+      "date": "2023-02-12T23:16:19.615Z",
+      "comp": [
+        {
+          "id": 1,
+          "productCode": "",
+          "recipe": "",
+          "target": "",
+          "actual": "",
+          "batchNo": ""
+        }
+      ],
       "id": 6
     },
     {
-      "batchNum": "TERT",
-      "productcode": "TERTER",
-      "recipePer": "21%",
-      "targetW": "12KG",
-      "actualW": "12KG",
-      "Tinitials": "REW",
-      "formulaCode": "TRETERT",
-      "jobnum": "ETERTERT",
-      "designcode": "TRETERT",
-      "date": "2023-02-04T22:54:52.093Z",
+      "Tinitials": "",
+      "formulaCode": "",
+      "jobnum": "",
+      "designcode": "",
+      "date": "2023-02-12T23:20:43.303Z",
+      "comp": [
+        {
+          "id": 1,
+          "productCode": "",
+          "recipe": "",
+          "target": "",
+          "actual": "",
+          "batchNo": ""
+        },
+        {
+          "id": 2,
+          "productCode": "",
+          "recipe": "",
+          "target": "",
+          "actual": "",
+          "batchNo": ""
+        }
+      ],
       "id": 7
     },
     {
-      "batchNum": "TERT",
-      "productcode": "TERTER",
-      "recipePer": "21%",
-      "targetW": "12KG",
-      "actualW": "12KG",
-      "Tinitials": "REW",
-      "formulaCode": "TRETERT",
-      "jobnum": "ETERTERT",
-      "designcode": "TRETERT",
-      "date": "2023-02-04T22:54:52.093Z",
+      "Tinitials": "GDFG",
+      "formulaCode": "DFGDFGDF",
+      "jobnum": "GDFGDFG",
+      "designcode": "GDFGDFG",
+      "date": "2023-02-12T23:33:13.860Z",
+      "comp": [
+        {
+          "id": 1,
+          "productCode": "hfhfgh",
+          "recipe": "gfddf",
+          "target": "gdfgdg",
+          "actual": "gdfgdfg",
+          "batchNo": "hfgddh"
+        }
+      ],
       "id": 8
-    },
-    {
-      "batchNum": "TERT",
-      "productcode": "TERTER",
-      "recipePer": "21%",
-      "targetW": "12KG",
-      "actualW": "12KG",
-      "Tinitials": "REW",
-      "formulaCode": "TRETERT",
-      "jobnum": "ETERTERT",
-      "designcode": "TRETERT",
-      "date": "2023-02-04T22:54:52.093Z",
-      "id": 9
     }
   ]
 }

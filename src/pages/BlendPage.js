@@ -7,63 +7,52 @@ function BlendPage() {
 
 const dbtwo = 'http://localhost:4000/manualBlends';
   
-const [batchNo, setBatchNo] = useState('');
+/*const [batchNo, setBatchNo] = useState('');
 const [productCode, setProductCode] = useState('');
 const [recipe, setRecipe] = useState('');
 const [target, setTarget] = useState('');
-const [actual, setActual] = useState('');
+const [actual, setActual] = useState('');*/
 
 const [initials, setInitials] = useState('');
 const [formula, setFormula] = useState('');
 const [jobNum, setJobNum] = useState('');
 const [designCode, setDesginCode] = useState('');
 
-const [comp, setComp] = useState([{id: 0, productCode: '', recipe: '', target: '', actual: '', batchNo: ''}]);
+const [comp, setComp] = useState([{id: 1, productCode: "", recipe: "", target: "", actual: "", batchNo: ""}]);
 
 const onSubmit = (e) => {
 e.preventDefault();
   
-  const batch = {batchNo, productCode, recipe, target, actual, initials, formula, jobNum, designCode};
+  const batch = {initials, formula, jobNum, designCode};
   console.log(batch);
-  const test = {comp};
-  console.log(test);
+  /*const test = {comp};
+  console.log(test); */
   
- comp.forEach((comp) => {
   fetch(dbtwo, {
     method: 'POST',
     body: JSON.stringify({
-       batchNum : comp.batchNo.toUpperCase(),
-       productcode: comp.productCode.toUpperCase(),
-       recipePer: comp.recipe + '%',
-       targetW: comp.target + 'KG',
-       actualW: comp.actual + 'KG',
-       Tinitials: initials.toUpperCase(),
-       formulaCode: formula.toUpperCase(),
-       jobnum: jobNum.toUpperCase(),
-       designcode: designCode.toUpperCase(),
-       date: new Date()
+      /*batchNum: batchNo.toUpperCase(),
+      productcode: productCode.toUpperCase(),
+      recipePer: recipe + '%',
+      targetW: target + 'KG',
+      actualW: actual + 'KG',*/
+      Tinitials: initials.toUpperCase(),
+      formulaCode: formula.toUpperCase(),
+      jobnum: jobNum.toUpperCase(),
+      designcode: designCode.toUpperCase(),
+      date: new Date(),
+      comp: comp
     }),
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
     }
-  })
- }) 
- }
+  });
+}
 
   return (
     <div className='manual-blend-container'>
       <form className='form-large' onSubmit={onSubmit}>
       <ManualBlend onSubmit={onSubmit} 
-      setBatchNo={setBatchNo} 
-      setProductCode={setProductCode} 
-      productCode={productCode} 
-      batchNo={batchNo} 
-      recipe={recipe}
-      setRecipe={setRecipe}
-      target={target}
-      setTarget={setTarget}
-      actual={actual}
-      setActual={setActual}
       initials={initials}
       setInitials={setInitials}
       formula={formula}
