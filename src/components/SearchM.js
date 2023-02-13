@@ -24,7 +24,7 @@ function SearchM() {
  };
 
 
-  return (
+return (
     <>
       <form className='search-form' onSubmit={batchSubmit}>
         <div className='search-div'>
@@ -34,7 +34,7 @@ function SearchM() {
           <button className='search-button' type='submit'>Find Items</button>
       </form>
     <div className='output-table'>
-      <table className='table table-striped'>
+      <table className='table table-striped table-bordered'>
           <thead>
             <tr>
               <th>Blend Information</th>
@@ -53,32 +53,30 @@ function SearchM() {
                     item.designcode.toLowerCase().includes(search.toLowerCase()) || 
                     item.date.toString().includes(search.toLowerCase())
                     ).map((item) => (
-                  <>
-                    <tr key={item.id}>
-                    <td>
-                        <table>
-                          <tbody>
-                            {item.comp.filter((compItem) => 
-                              compItem.batchNo.toLowerCase().includes(search.toLowerCase())
-                            ).map((compItem) => (
-                              <tr key={compItem.id}>
-                                <td>{compItem.batchNo}</td>
-                                <td>{compItem.productCode}</td>
-                                <td>{compItem.recipe}</td>
-                                <td>{compItem.target}</td>
-                                <td>{compItem.actual}</td>
-                              </tr>
-                          ))}
-                         </tbody>
-                       </table>
-                     </td>
-                      <td>{item.date}</td>
-                      <td>{item.formulaCode}</td>
-                      <td>{item.jobnum}</td>
-                      <td>{item.designcode}</td>
-                      <td>{item.Tinitials}</td>
-                   </tr>
-                 </>
+                      <tr key={item.id}>
+                      <td style={{width: 420 + "px" }}>
+                          <table>
+                            <tbody>
+                              {item.comp.filter((compItem) => 
+                                compItem.batchNo.toLowerCase().includes(search.toLowerCase())
+                              ).map((compItem) => (
+                                <tr key={compItem.id}>
+                                  <td>{compItem.batchNo}</td>
+                                  <td>{compItem.productCode}</td>
+                                  <td>{compItem.recipe}</td>
+                                  <td>{compItem.target}</td>
+                                  <td>{compItem.actual}</td>
+                                </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </td>
+                        <td>{item.date}</td>
+                        <td>{item.formulaCode}</td>
+                        <td>{item.jobnum}</td>
+                        <td>{item.designcode}</td>
+                        <td>{item.Tinitials}</td>
+                    </tr>
               ))}
            </tbody>
       </table>

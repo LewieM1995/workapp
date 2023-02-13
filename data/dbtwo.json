@@ -231,6 +231,32 @@
         }
       ],
       "id": 8
+    },
+    {
+      "Tinitials": "GDFG",
+      "formulaCode": "DFGDFGDF",
+      "jobnum": "GDFGDFG",
+      "designcode": "GDFGDFG",
+      "date": "2023-02-12T23:34:04.833Z",
+      "comp": [
+        {
+          "id": 1,
+          "productCode": "gdfg",
+          "recipe": "gdfg",
+          "target": "gfdg",
+          "actual": "gdfg",
+          "batchNo": "gdfg"
+        },
+        {
+          "id": 2,
+          "productCode": "",
+          "recipe": "",
+          "target": "",
+          "actual": "",
+          "batchNo": ""
+        }
+      ],
+      "id": 9
     }
   ]
 }

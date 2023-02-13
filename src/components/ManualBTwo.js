@@ -1,13 +1,21 @@
 import React from 'react';
 
-const ManualBTwo = ({ comp, setComp }) => {
+const ManualBTwo = ({ comp, setComp, id }) => {
 
-  const handleInputChange = (event, index) => {
+  /*const handleInputChange = (event, index) => {
     const newComp = [...comp];
+    newComp[index][event.target.name] = event.target.value;
+    setComp(newComp);
+  };*/
+
+  const handleInputChange = (event) => {
+    const newComp = [...comp];
+    const index = newComp.findIndex(item => item.id === id);
     newComp[index][event.target.name] = event.target.value;
     setComp(newComp);
   };
 
+  
   return (
     <div className='mbtwo-container'>
       <div className='recipe-input-div'>

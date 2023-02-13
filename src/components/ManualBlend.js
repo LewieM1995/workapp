@@ -6,10 +6,13 @@ import ManualBTwo from './ManualBTwo'
 function ManualBlend({ setDesginCode, designCode, initials, setInitials, formula, setFormula, jobNum, setJobNum, comp, setComp}){
 
 
-
-const addComp = (e) => {
+const addComp = () => {
   //e.prenventDefault();
-  setComp([...comp, {id : comp.length + 1, productCode: '', recipe: '', target: '', actual: '', batchNo: ''}]);
+  if (comp.length >= 5){
+    return;
+  } else {
+  setComp([...comp, {id : comp.length + 1, productCode: '', recipe: '', target: '', actual: '', batchNo: ''}]); 
+  }
 }; 
 
 
@@ -30,7 +33,7 @@ const addComp = (e) => {
         </div>
         <div className='manual-input-div'>
           <input type='text' className='manual-input' placeholder='Tech Initals' value={initials} onChange={(e) => setInitials(e.target.value)} />
-          <label className='manual-label'required>Tech Initals</label>
+          <label className='manual-label' required>Tech Initals</label>
         </div>
       </div>
       <div className='wrapper-mbt'>
