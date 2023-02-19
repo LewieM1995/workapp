@@ -2,7 +2,7 @@ import React from 'react'
 import ManualBlend from '../components/ManualBlend'
 import { useState } from 'react';
 import './mblendpage.css'
-import { act } from 'react-dom/test-utils';
+
 
 function BlendPage() {
 
