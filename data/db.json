@@ -1,22 +1,18 @@
 {
   "batchCodes": [
     {
-      "id": 1,
-      "batchNum": "2YATQ01FA",
-      "productName": "FXDEV116",
-      "productCode": "FXDEV116"
+      "batchNum": "2YATFQ0902",
+      "productname": "FXDEV125",
+      "productcode": "FXDEV125",
+      "date": "2023-02-16T13:24:12.136Z",
+      "id": 1
     },
     {
-      "batchNum": "2YATQF019S",
-      "productname": "FXDEV114",
-      "productcode": "FXDEV114",
+      "batchNum": "2YATFQ0902",
+      "productname": "FXDEV116",
+      "productcode": "FXDEV116",
+      "date": "2023-02-16T13:24:23.754Z",
       "id": 2
-    },
-    {
-      "batchNum": "2YATQF019S",
-      "productname": "FXDEV114",
-      "productcode": "FXDEV114",
-      "id": 3
     }
   ]
 }

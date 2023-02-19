@@ -9,15 +9,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    background-color: transparent;
     border-radius: 5px 5px 0px 0px;
 }
 
 .manual-form {
     width: 400px;
     height: 400px;
-    background-color: aliceblue;
-    border-radius: 5px;
+    background-color: rgb(48, 163, 192);
 }
 
 .manual-input-div{
@@ -43,9 +42,7 @@
 
 .manual-input {
     box-shadow: none;
-    background-color: rgba(0,0,0, 0.01);
     border-radius: 0;
-    border: 1px solid rgba(0, 0, 0, 0.3);
     /*border-style: none none solid none;*/
     width: 100%;
     height: 100%;
@@ -53,8 +50,7 @@
     padding-left: 10px;
     padding-top: 10px;
     font-size: 15px;
-    background-color: transparent;
-    box-shadow: 5px 5px 1px 1px rgba(238, 217, 113, 1);
+    box-shadow: 5px 5px 1px 1px rgba(226, 125, 96, 1);
     border: 1px #000 solid;
 }
 
@@ -87,8 +83,7 @@
 .mbtwo-container {
     width: 100%;
     height: 400px;
-    background-color: aliceblue;
-    border-radius: 5px;
+    background-color: rgb(48, 163, 192);
 }
 
 .recipe-input-div{
@@ -113,7 +108,6 @@
 
 .recipe-input {
     box-shadow: none;
-    background-color: rgba(0,0,0, 0.01);
     border-radius: 0;
     border: 1px solid rgba(0, 0, 0, 0.3);
     /*border-style: none none solid none;*/
@@ -123,8 +117,7 @@
     padding-left: 10px;
     padding-top: 10px;
     font-size: 15px;
-    background-color: transparent;
-    box-shadow: 5px 5px 1px 1px rgba(238, 217, 113, 1);
+    box-shadow: 5px 5px 1px 1px rgba(226, 125, 96, 1);
     border: 1px #000 solid;
 }
 
@@ -140,6 +133,7 @@
 
 .recipe-input:focus + .recipe-label, .recipe-input:not(:placeholder-shown) + .recipe-label {
     transform: translateY(-3.1em) scale(.8);
+    color: white;
 }
 
 .wrapper-mbt {
@@ -147,3 +141,7 @@
     display: flex;
 }
 
+.btn {
+    border-radius: 0px;
+    background-color: rgba(226, 125, 96, 0.6);
+}

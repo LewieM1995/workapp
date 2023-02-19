@@ -9,20 +9,18 @@
 
 .manual-button {
     position: relative;
-    margin: 0px 700px;
+    margin: 50px 760px;
     width: 20%;
     height: 50px;
-    border-radius: 0px 0px 5px 5px;
     outline: none;
     cursor: pointer;
-    background-color: transparent;
-    box-shadow: 5px 5px 1px 5px rgba(238, 217, 113, 1);
-    border: 1px #000 solid;
+    background-color: rgb(255, 254, 254);
+    border: 1px solid;
 }
 
 .manual-button:hover {
-    background-color:  #FFA351FF;
-    transition: ease-in 1s;
+    box-shadow: inset 0px 0px 0px 25px rgba(226, 125, 96, 0.6);
+    transition: ease-in 0.5s;
 }
 
 

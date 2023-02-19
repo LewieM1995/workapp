@@ -171,89 +171,27 @@
       "id": 5
     },
     {
-      "Tinitials": "GFDG",
-      "formulaCode": "GDFG",
-      "jobnum": "GDFG",
-      "designcode": "GFDG",
-      "date": "2023-02-12T23:16:19.615Z",
+      "Tinitials": "LM",
+      "formulaCode": "FXDEV136",
+      "jobnum": "PPO2-012345",
+      "designcode": "0166-3166",
+      "date": "2023-02-16T12:33:43.791Z",
       "comp": [
         {
           "id": 1,
-          "productCode": "",
-          "recipe": "",
-          "target": "",
-          "actual": "",
-          "batchNo": ""
-        }
-      ],
-      "id": 6
-    },
-    {
-      "Tinitials": "",
-      "formulaCode": "",
-      "jobnum": "",
-      "designcode": "",
-      "date": "2023-02-12T23:20:43.303Z",
-      "comp": [
-        {
-          "id": 1,
-          "productCode": "",
-          "recipe": "",
-          "target": "",
-          "actual": "",
-          "batchNo": ""
+          "batchNo": "2YATPHFTO321",
+          "productCode": "FXDEV136",
+          "recipe": "50%",
+          "target": "10KG",
+          "actual": "10KG"
         },
         {
           "id": 2,
-          "productCode": "",
-          "recipe": "",
-          "target": "",
-          "actual": "",
-          "batchNo": ""
-        }
-      ],
-      "id": 7
-    },
-    {
-      "Tinitials": "GDFG",
-      "formulaCode": "DFGDFGDF",
-      "jobnum": "GDFGDFG",
-      "designcode": "GDFGDFG",
-      "date": "2023-02-12T23:33:13.860Z",
-      "comp": [
-        {
-          "id": 1,
-          "productCode": "hfhfgh",
-          "recipe": "gfddf",
-          "target": "gdfgdg",
-          "actual": "gdfgdfg",
-          "batchNo": "hfgddh"
-        }
-      ],
-      "id": 8
-    },
-    {
-      "Tinitials": "GDFG",
-      "formulaCode": "DFGDFGDF",
-      "jobnum": "GDFGDFG",
-      "designcode": "GDFGDFG",
-      "date": "2023-02-12T23:34:04.833Z",
-      "comp": [
-        {
-          "id": 1,
-          "productCode": "gdfg",
-          "recipe": "gdfg",
-          "target": "gfdg",
-          "actual": "gdfg",
-          "batchNo": "gdfg"
-        },
-        {
-          "id": 2,
-          "productCode": "",
-          "recipe": "",
-          "target": "",
-          "actual": "",
-          "batchNo": ""
+          "batchNo": "2YATPHFT0213",
+          "productCode": "747TV",
+          "recipe": "50%",
+          "target": "10KG",
+          "actual": "10KG"
         }
       ],
       "id": 9

@@ -11,9 +11,6 @@ function SearchM() {
   const res = await fetch(dbtwo);
   const info = await res.json();
   setCodes(info)
-  /*console.log(search.toLowerCase() === ''
-  ? info
-  : info.filter(item => item.date.toString().includes(search) || item.jobnum.toString().toUpperCase().includes(search) || item.productcode.toString().toUpperCase().includes(search)))*/
  };
 
  const filteredInfo = codes;

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import BatchTrack from '../components/BatchTrack'
+import ColorSwatch from '../components/ColorSwatch';
 import './batchpage.css'
 
 function BatchPage () {
@@ -11,6 +12,15 @@ const db = 'http://localhost:8000/batchCodes';
 
 const onSubmit = (e) => {
  //e.preventDefault();
+
+  if (
+    batchNo === '' ||
+    productName === '' ||
+    productCode === '' )
+ {
+    return;
+  }
+
  const batch = {batchNo, productName, productCode};
  console.log(batch);
 

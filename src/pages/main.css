@@ -21,13 +21,12 @@
     justify-content: center;
     align-items: center;
     border: none;
-    height: 60px;
+    height: 50px;
     width: 300px;
-    background-color: transparent;
-    box-shadow: 5px 5px 1px 5px rgba(238, 121, 113, 0.6);
-    border: 1px solid rgba(238, 121, 113, 0.6);
-    border-radius: 3px;
-    color: black;
+    background: rgb(204, 27, 27);
+    box-shadow: 50px 20px 1px 1px rgba(226, 125, 96, 0.5);
+    border-radius: 0;
+    color: White;
 }
 
 .main-button:hover {
@@ -35,6 +34,8 @@
     outline: none;
     transform: scale(1.04);
     text-decoration: none;
+    color: aliceblue;
+    box-shadow: 1px 1px 1px 1px rgba(226, 125, 96, 0.5);
 }
 
 
