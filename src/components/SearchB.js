@@ -1,18 +1,27 @@
 import React, { useState } from 'react';
+import LoadingComp from './LoadingComp';
 import './search.css'
 
 function SearchB() {
 
   const [search, setSearch] = useState('');
   const [codes, setCodes] = useState([]);
+  const [loading, setLoading] = useState()
 
   const db = 'http://localhost:8000/batchCodes';
 
- async function getData(){
-  const res = await fetch(db);
-  const info = await res.json();
-  setCodes(info);
- };
+ async function getData() {
+    try {
+      setLoading(true);
+      const res = await fetch(db);
+      const info = await res.json();
+      setCodes(info);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
  const filteredInfo = codes;
 
@@ -42,7 +51,9 @@ return (
             </tr>
           </thead>
             <tbody>
-              {filteredInfo.filter((item) =>  
+              {! loading ? (
+                filteredInfo.length > 0 ? (
+                filteredInfo.filter((item) =>  
                     item.batchNum.toLowerCase().includes(search.toLowerCase()) ||
                     item.productcode.toLowerCase().includes(search.toLowerCase()) || 
                     item.productname.toLowerCase().includes(search.toLowerCase()) || 
@@ -54,7 +65,14 @@ return (
                         <td>{item.productcode}</td>
                         <td>{item.productname}</td>
                     </tr>
-              ))}
+              ))) : (
+                <tr>
+                  <td colSpan={6}>No results Found</td>
+                </tr>
+              )
+              ) : (
+                <LoadingComp/>
+              )}
            </tbody>
       </table>
     </div>

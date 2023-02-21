@@ -23,20 +23,22 @@
     border: none;
     height: 50px;
     width: 300px;
-    background: rgb(204, 27, 27);
-    box-shadow: 50px 20px 1px 1px rgba(226, 125, 96, 0.5);
-    border-radius: 0;
-    color: White;
+    box-shadow: 0px 0px 1px 10px rgba(226, 125, 96, 0.2);
+    border-radius: 0px;
+    color: black;
 }
 
 .main-button:hover {
-    transition: all 0.5s;
+    transition: all ease-in 0.4s;
     outline: none;
-    transform: scale(1.04);
+    transform: scale(1.2);
     text-decoration: none;
-    color: aliceblue;
-    box-shadow: 1px 1px 1px 1px rgba(226, 125, 96, 0.5);
+    color: black;
+    box-shadow: 1px 1px 1px 1px rgba(226, 125, 96, 0.1);
+    background-color: rgba(226, 125, 96, 0.3);
 }
+
+
 
 
 

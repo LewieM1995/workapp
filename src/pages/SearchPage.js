@@ -15,7 +15,7 @@ function SearchPage() {
     <>
         <div className='higher-wrapper'>
             <div className='btn-wrapper'>
-                <button type='button' onClick={handleToggle} className='btn-search'>{toggle ? 'Batch Tracking' : 'Manual Blends' }</button>
+                <button type='button' onClick={handleToggle} className='btn-search'>{toggle ? 'Click for Manual Blends' : 'Click for Batches' }</button>
             </div>
             <div className='search-wrapper'>
                 {toggle ? <SearchB/> : <SearchM/>}

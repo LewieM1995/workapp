@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import BatchTrack from '../components/BatchTrack'
 import ColorSwatch from '../components/ColorSwatch';
-import './batchpage.css'
+import './batchpost.css'
 
 function BatchPage () {
 

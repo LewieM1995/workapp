@@ -17,19 +17,25 @@
 }
 
 .btn-search {
-    width: 50%;
+    width: 100%;
     height: 30px;
     border: none;
-    border-radius: 0px;
-    background-color: rgb(204, 27, 27);
-    color: white;
+    border-radius: 10px 10px 0px 0px;
+    color: black;
     outline: none;
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    text-decoration: underline;
+    text-align: left;
 }
 
 .btn-search:hover {
     outline: none;
     border: none;
     cursor: pointer;
+}
+
+.btn-search:focus {
+    outline: none;
 }
 
 
@@ -45,10 +51,7 @@
 .search-form {
     width: 300px;
     height: 130px;
-    border: 1px rgba(226, 125, 96, 0.5) solid;
     padding: 10px;
-    box-shadow: 2px 2px 1px 1px rgba(226, 125, 96, 0.5);
-    background-color: rgb(48, 163, 192);
 }
 
 .search-div{
@@ -97,7 +100,7 @@
 
 .search-input:focus + .search-label, .search-input:not(:placeholder-shown) + .search-label {
     transform: translateY(-4.7em) scale(1);
-    color: white;
+    color: black;
 }
 
 .search-button {
@@ -121,13 +124,11 @@
     table-layout: auto;
     display: inline-block;
     overflow: auto;
-    box-shadow: 5px 5px 1px 1px rgba(226, 125, 96, 0.5);
-    color: white;
-    background-color: rgb(48, 163, 192);
+    color: black;
 }
 
 .table-bordered td, .table-bordered th {
-    border: 1px solid rgb(245, 241, 241);
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 

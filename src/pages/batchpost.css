@@ -22,10 +22,7 @@
 .searchB-form {
     width: 300px;
     height: 130px;
-    border: 1px rgba(226, 125, 96, 0.5) solid;
     padding: 10px;
-    box-shadow: 2px 2px 1px 1px rgba(226, 125, 96, 0.5);
-    background-color: rgb(65, 133, 179);
 }
 
 .searchB-Ddiv{
@@ -93,12 +90,9 @@
 .outputB-table{
     width: 80%;
     max-height: 80%;
-    border: 1px solid rgba(226, 125, 96, 0.1);
     padding: 10px;
     table-layout: auto;
     display: inline-block;
     overflow: auto;
-    box-shadow: 5px 5px 1px 1px rgba(226, 125, 96, 0.5);
-    color: white;
-    background-color: rgb(65, 133, 179);
+    color: black;
 }

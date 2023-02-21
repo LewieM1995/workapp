@@ -1,7 +1,7 @@
 import React from 'react'
 import ManualBlend from '../components/ManualBlend'
 import { useState } from 'react';
-import './mblendpage.css'
+import './blendpost.css'
 
 
 function BlendPage() {

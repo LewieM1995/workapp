@@ -1,17 +1,27 @@
 import React, { useState } from 'react'
+import LoadingComp from './LoadingComp';
 
 function SearchM() {
 
   const [search, setSearch] = useState('');
   const [codes, setCodes] = useState([]);
+  const [loading, setLoading] = useState()
 
   const dbtwo = 'http://localhost:4000/manualBlends';
 
- async function getData(){
-  const res = await fetch(dbtwo);
-  const info = await res.json();
-  setCodes(info)
- };
+  async function getData() {
+    try {
+      setLoading(true);
+      const res = await fetch(dbtwo);
+      const info = await res.json();
+      setCodes(info);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+   
 
  const filteredInfo = codes;
 
@@ -42,21 +52,20 @@ return (
               <th>Initals</th>
             </tr>
           </thead>
-            <tbody>
-              {filteredInfo.filter((item) => 
-                    item.Tinitials.toLowerCase().includes(search.toLowerCase()) ||
-                    item.formulaCode.toLowerCase().includes(search.toLowerCase()) || 
-                    item.jobnum.toLowerCase().includes(search.toLowerCase()) || 
-                    item.designcode.toLowerCase().includes(search.toLowerCase()) || 
-                    item.date.toString().includes(search.toLowerCase())
-                    ).map((item) => (
-                      <tr key={item.id}>
-                      <td style={{width: 420 + "px" }}>
+          <tbody>
+            {!loading ? (
+              filteredInfo.length > 0 ? (
+                filteredInfo.map((item) => {
+                  const filteredComps = item.comp.filter((compItem) =>
+                    compItem.batchNo.toLowerCase().includes(search.toLowerCase())
+                  );
+                  return (
+                    <tr key={item.id}>
+                      <td style={{ width: 420 + "px" }}>
+                        {filteredComps.length > 0 && (
                           <table>
                             <tbody>
-                              {item.comp.filter((compItem) => 
-                                compItem.batchNo.toLowerCase().includes(search.toLowerCase())
-                              ).map((compItem) => (
+                              {filteredComps.map((compItem) => (
                                 <tr key={compItem.id}>
                                   <td>{compItem.batchNo}</td>
                                   <td>{compItem.productCode}</td>
@@ -64,18 +73,28 @@ return (
                                   <td>{compItem.target}</td>
                                   <td>{compItem.actual}</td>
                                 </tr>
-                            ))}
-                          </tbody>
-                        </table>
+                              ))}
+                            </tbody>
+                          </table>
+                        )}
                       </td>
-                        <td>{item.date}</td>
-                        <td>{item.formulaCode}</td>
-                        <td>{item.jobnum}</td>
-                        <td>{item.designcode}</td>
-                        <td>{item.Tinitials}</td>
+                      <td>{item.date}</td>
+                      <td>{item.formulaCode}</td>
+                      <td>{item.jobnum}</td>
+                      <td>{item.designcode}</td>
+                      <td>{item.Tinitials}</td>
                     </tr>
-              ))}
-           </tbody>
+                  );
+                })
+              ) : (
+                <tr>
+                  <td colSpan={6}>No results found</td>
+                </tr>
+              )
+            ) : (
+              <LoadingComp />
+            )}
+          </tbody>
       </table>
     </div>
   </>
