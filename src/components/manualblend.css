@@ -155,8 +155,12 @@
 .btn {
     border-radius: 0px;
     background-color: rgba(226, 125, 96, 0.6);
-    height: 200px;
-    margin: auto auto;
+    height: 150px;
+    margin: 50px auto;
+}
+.btn:hover {
+    background-color: rgba(226, 125, 96, 0.9);
+    transition: all ease-in 0.3s;
 }
 .btn:focus {
     background-color: rgba(226, 125, 96, 0.6);
