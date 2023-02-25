@@ -16,7 +16,7 @@ const [designCode, setDesginCode] = useState('');
 const [comp, setComp] = useState([{id: 1, productCode: "", recipe: "", target: "" , actual: "", batchNo: ""}]);
 
 const onSubmit = (e) => {
-e.preventDefault();
+//e.preventDefault();
 
   if (
     initials === '' ||

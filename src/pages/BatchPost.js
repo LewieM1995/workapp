@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import BatchTrack from '../components/BatchTrack'
-import ColorSwatch from '../components/ColorSwatch';
 import './batchpost.css'
 
 function BatchPage () {
@@ -11,7 +10,7 @@ const [productCode, setProductCode] = useState('');
 const db = 'https://us-east-1.aws.data.mongodb-api.com/app/testapp-nxbca/endpoint/batchpost';
 
 const onSubmit = (e) => {
- e.preventDefault();
+ //e.preventDefault();
 
   if (
     batchNo === '' ||
