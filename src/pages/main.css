@@ -1,45 +1,18 @@
-* {
-    margin: 0;
-}
-
-.main-header {
-    height: 10vh;
-    margin-bottom: 100px;
-}
-
-.button-container {
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;  
-    padding: 20px;
-}
- 
 .main-button {
+    margin-right: 10%;
+    color: rgb(207, 132, 132);
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    height: 50px;
-    width: 300px;
-    box-shadow: 0px 0px 1px 10px rgba(226, 125, 96, 0.2);
-    border-radius: 0px;
-    color: black;
+}
+
+@media screen and (max-width: 1100px){
+    .main-button {
+        display: block;
+        margin-bottom: 2%;
+        transition: all ease-in 0.2s;
+    }
 }
 
 .main-button:hover {
-    transition: all ease-in 0.4s;
-    outline: none;
-    transform: scale(1.2);
     text-decoration: none;
-    color: black;
-    box-shadow: 1px 1px 1px 1px rgba(226, 125, 96, 0.1);
-    background-color: rgba(226, 125, 96, 0.3);
+    color: aliceblue;
 }
-
-
-
-
-
-

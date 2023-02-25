@@ -8,10 +8,10 @@ function BatchPage () {
 const [batchNo, setBatchNo] = useState('');
 const [productName, setProductName] = useState('');
 const [productCode, setProductCode] = useState('');
-const db = 'http://localhost:8000/batchCodes';
+const db = 'https://us-east-1.aws.data.mongodb-api.com/app/testapp-nxbca/endpoint/batchpost';
 
 const onSubmit = (e) => {
- //e.preventDefault();
+ e.preventDefault();
 
   if (
     batchNo === '' ||

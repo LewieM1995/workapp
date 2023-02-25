@@ -12,9 +12,9 @@ function App() {
     <Router>
       <Main />
         <Routes>
-          <Route exact path="/" element={<BatchPost/>}/>
+          <Route exact path="/" element={<SearchPage/>}/>
           <Route exact path="/manualblend" element={<BlendPost/>}/>
-          <Route exact path="/searchpage" element={<SearchPage/>}/>
+          <Route exact path="/batchpost" element={<BatchPost/>}/>
         </Routes>
     </Router>
   );

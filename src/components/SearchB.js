@@ -8,7 +8,8 @@ function SearchB() {
   const [codes, setCodes] = useState([]);
   const [loading, setLoading] = useState()
 
-  const db = 'http://localhost:8000/batchCodes';
+  const db = `https://us-east-1.aws.data.mongodb-api.com/app/testapp-nxbca/endpoint/batchpost?search=${search}`;
+
 
  async function getData() {
     try {
@@ -16,6 +17,7 @@ function SearchB() {
       const res = await fetch(db);
       const info = await res.json();
       setCodes(info);
+      console.log(info)
     } catch (error) {
       console.error(error);
     } finally {

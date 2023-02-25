@@ -7,7 +7,7 @@ function SearchM() {
   const [codes, setCodes] = useState([]);
   const [loading, setLoading] = useState()
 
-  const dbtwo = 'http://localhost:4000/manualBlends';
+  const dbtwo = `https://us-east-1.aws.data.mongodb-api.com/app/testapp-nxbca/endpoint/manualPost?search=${search}`;
 
   async function getData() {
     try {

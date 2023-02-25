@@ -6,7 +6,7 @@ import './blendpost.css'
 
 function BlendPage() {
 
-const dbtwo = 'http://localhost:4000/manualBlends';
+const dbtwo = 'https://us-east-1.aws.data.mongodb-api.com/app/testapp-nxbca/endpoint/ManualPost';
 
 const [initials, setInitials] = useState('');
 const [formula, setFormula] = useState('');
@@ -16,7 +16,7 @@ const [designCode, setDesginCode] = useState('');
 const [comp, setComp] = useState([{id: 1, productCode: "", recipe: "", target: "" , actual: "", batchNo: ""}]);
 
 const onSubmit = (e) => {
-//e.preventDefault();
+e.preventDefault();
 
   if (
     initials === '' ||
