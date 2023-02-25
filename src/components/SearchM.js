@@ -53,47 +53,46 @@ return (
             </tr>
           </thead>
           <tbody>
-            {!loading ? (
-              filteredInfo.length > 0 ? (
-                filteredInfo.map((item) => {
-                  const filteredComps = item.comp.filter((compItem) =>
-                    compItem.batchNo.toLowerCase().includes(search.toLowerCase())
+          {!loading ? (
+            filteredInfo.length > 0 ? (
+              filteredInfo.map((item) => {
+                let compTable = null;
+                if (item.comp) {
+                  compTable = (
+                    <table>
+                      <tbody>
+                        {item.comp.map((compItem) => (
+                          <tr key={compItem.id}>
+                            <td>{compItem.batchNo}</td>
+                            <td>{compItem.productCode}</td>
+                            <td>{compItem.recipe}</td>
+                            <td>{compItem.target}</td>
+                            <td>{compItem.actual}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
                   );
-                  return (
-                    <tr key={item.id}>
-                      <td style={{ width: 420 + "px" }}>
-                        {filteredComps.length > 0 && (
-                          <table>
-                            <tbody>
-                              {filteredComps.map((compItem) => (
-                                <tr key={compItem.id}>
-                                  <td>{compItem.batchNo}</td>
-                                  <td>{compItem.productCode}</td>
-                                  <td>{compItem.recipe}</td>
-                                  <td>{compItem.target}</td>
-                                  <td>{compItem.actual}</td>
-                                </tr>
-                              ))}
-                            </tbody>
-                          </table>
-                        )}
-                      </td>
-                      <td>{item.date}</td>
-                      <td>{item.formulaCode}</td>
-                      <td>{item.jobnum}</td>
-                      <td>{item.designcode}</td>
-                      <td>{item.Tinitials}</td>
-                    </tr>
-                  );
-                })
-              ) : (
-                <tr>
-                  <td colSpan={6}>No results found</td>
-                </tr>
-              )
+                }
+                return (
+                  <tr key={item.id}>
+                    <td style={{ width: 420 + "px" }}>{compTable}</td>
+                    <td>{item.date}</td>
+                    <td>{item.formulaCode}</td>
+                    <td>{item.jobnum}</td>
+                    <td>{item.designcode}</td>
+                    <td>{item.Tinitials}</td>
+                  </tr>
+                );
+              })
             ) : (
-              <LoadingComp />
-            )}
+              <tr>
+                <td colSpan={6}>No results found</td>
+              </tr>
+            )
+          ) : (
+            <LoadingComp />
+          )}
           </tbody>
       </table>
     </div>
