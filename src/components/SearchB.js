@@ -8,7 +8,7 @@ function SearchB() {
   const [codes, setCodes] = useState([]);
   const [loading, setLoading] = useState()
 
-  const db = `https://us-east-1.aws.data.mongodb-api.com/app/testapp-nxbca/endpoint/batchpost?search=${search}`;
+  const db = `https://work-application-backend.onrender.com/batchitems?search=${search}`;
 
 
  async function getData() {

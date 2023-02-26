@@ -6,7 +6,7 @@ import './blendpost.css'
 
 function BlendPage() {
 
-const dbtwo = 'https://us-east-1.aws.data.mongodb-api.com/app/testapp-nxbca/endpoint/ManualPost';
+const dbtwo = `https://work-application-backend.onrender.com/manualblends`;
 
 const [initials, setInitials] = useState('');
 const [formula, setFormula] = useState('');

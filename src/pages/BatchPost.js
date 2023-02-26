@@ -7,7 +7,7 @@ function BatchPage () {
 const [batchNo, setBatchNo] = useState('');
 const [productName, setProductName] = useState('');
 const [productCode, setProductCode] = useState('');
-const db = 'https://us-east-1.aws.data.mongodb-api.com/app/testapp-nxbca/endpoint/batchpost';
+const db = 'https://work-application-backend.onrender.com/batchitems';
 
 const onSubmit = (e) => {
  //e.preventDefault();
