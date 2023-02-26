@@ -9,7 +9,7 @@ function App() {
 
 
   return (
-    <Router>
+    <Router basename="/">
       <Main />
         <Routes>
           <Route exact path="/" element={<SearchPage/>}/>
