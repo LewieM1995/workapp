@@ -16,7 +16,7 @@ function SearchB() {
       setLoading(true);
       const res = await fetch(db);
       const info = await res.json();
-      setCodes(info);
+      setCodes(info.BatchItems);
       console.log(info)
     } catch (error) {
       console.error(error);
