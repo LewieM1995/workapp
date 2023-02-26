@@ -9,7 +9,7 @@ function App() {
 
 
   return (
-    <Router basename="/batchpost">
+    <Router>
       <Main />
         <Routes>
           <Route exact path="/" element={<SearchPage/>}/>
