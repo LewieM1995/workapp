@@ -7,7 +7,7 @@ function BatchPage () {
 const [batchNo, setBatchNo] = useState('');
 const [productName, setProductName] = useState('');
 const [productCode, setProductCode] = useState('');
-const db = 'https://work-application-backend.onrender.com/batchitems';
+const db = 'https://work-application-backend.onrender.com/batchpost';
 
 const onSubmit = (e) => {
  //e.preventDefault();

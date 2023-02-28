@@ -6,7 +6,7 @@ import './blendpost.css'
 
 function BlendPage() {
 
-const dbtwo = `https://work-application-backend.onrender.com/manualblends`;
+const dbtwo = `https://work-application-backend.onrender.com/manualblend`;
 
 const [initials, setInitials] = useState('');
 const [formula, setFormula] = useState('');
