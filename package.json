@@ -41,7 +41,7 @@
   "devDependencies": {
     "json-loader": "^0.5.7"
   }, 
-  "homepage": ".",
+  "homepage": 'https://work-application.onrender.com/',
     "build": {
     "publicUrl": "./"
   },
