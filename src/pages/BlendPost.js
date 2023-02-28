@@ -47,8 +47,8 @@ const onSubmit = (e) => {
         recipe: item.recipe + "%",
         target: item.target + "KG",
         actual: item.actual + "KG"
-      })
-    }),
+      }))
+    },
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
     }
