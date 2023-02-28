@@ -29,7 +29,7 @@ const onSubmit = (e) => {
     batchNum : batchNo.toUpperCase(),
     productname : productName.toUpperCase(),
     productcode: productCode.toUpperCase(),
-    date: new Date()
+    date: new Date().toLocaleString('en-US', { timeZone: 'UTC' })
   }),
   headers: {
     'Content-type': 'application/json; charset=UTF-8',

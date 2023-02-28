@@ -39,7 +39,7 @@ const onSubmit = (e) => {
       formulaCode: formula.toUpperCase(),
       jobnum: jobNum.toUpperCase(),
       designcode: designCode.toUpperCase(),
-      date: new Date(),
+      date: new Date().toLocaleString('en-US', { timeZone: 'UTC' }),
       comp: comp.map((item) => ({
         id: item.id,
         batchNo: item.batchNo.toUpperCase(),
