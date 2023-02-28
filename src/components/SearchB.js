@@ -15,9 +15,9 @@ function SearchB() {
     try {
       setLoading(true);
       const res = await fetch(db);
-      const info = await res.json();
-      setCodes(info);
-      console.log(info)
+      const data = await res.json();
+      setCodes(data.data);
+      console.log(data)
     } catch (error) {
       console.error(error);
     } finally {

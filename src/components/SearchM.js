@@ -13,8 +13,9 @@ function SearchM() {
     try {
       setLoading(true);
       const res = await fetch(dbtwo);
-      const info = await res.json();
-      setCodes(info);
+      const data = await res.json();
+      setCodes(data.data);
+      console.log(data);
     } catch (error) {
       console.error(error);
     } finally {
