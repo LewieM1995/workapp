@@ -34,7 +34,7 @@ const onSubmit = (e) => {
 
   fetch(dbtwo, {
     method: 'POST',
-    body: {
+    body: JSON.stringify({
       Tinitials: initials.toUpperCase(),
       formulaCode: formula.toUpperCase(),
       jobnum: jobNum.toUpperCase(),
@@ -48,7 +48,7 @@ const onSubmit = (e) => {
         target: item.target + "KG",
         actual: item.actual + "KG"
       }))
-    },
+    }),
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
     }
