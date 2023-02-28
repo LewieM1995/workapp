@@ -53,7 +53,7 @@ return (
             </tr>
           </thead>
             <tbody>
-              {! loading ? (
+              {!loading ? (
                 filteredInfo.length > 0 ? (
                 filteredInfo.filter((item) =>  
                     item.batchNum.toLowerCase().includes(search.toLowerCase()) ||
