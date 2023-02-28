@@ -25,12 +25,12 @@ const onSubmit = (e) => {
 
  fetch(db, {
   method: 'POST',
-  body: {
+  body: JSON.stringify({
     batchNum : batchNo.toUpperCase(),
     productname : productName.toUpperCase(),
     productcode: productCode.toUpperCase(),
     date: new Date().toLocaleString('en-US', { timeZone: 'UTC' })
-  },
+  }),
   headers: {
     'Content-type': 'application/json; charset=UTF-8',
   }
